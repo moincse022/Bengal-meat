@@ -3,7 +3,10 @@ import { BsFillCartDashFill } from "react-icons/bs";
 import { CiUser } from "react-icons/ci";
 import { IoIosSearch } from "react-icons/io";
 import logo from '../../assets/Image/logo.png'
+import { useState } from "react";
+import './Navbar.css'
 const Navbar = () => {
+    const [menu,setMenu]=useState();
     return (
         <>
         <nav>
@@ -22,7 +25,7 @@ const Navbar = () => {
              </div>
              {/* navLink */}
              <div className="flex items-center gap-4">
-                  <div className="border flex items-center p-2 gap-4 bg-slate-800 text-white shadow-xl "><IoLocationOutline  className="w-4 h-4 text-amber-400"/> khulna</div>
+                  <div className="border flex items-center p-2 gap-4 bg-slate-800 text-white shadow-xl" onClick={()=>setMenu(menu)}><IoLocationOutline  className="w-4 h-4 text-amber-400"/> khulna</div>
                  <div className="bg-slate-800 text-white shadow-xl border p-3 ">   <BsFillCartDashFill className="w-4 h-4 text-amber-400"/> </div>
                   <div className="border flex items-center p-2 gap-4 bg-slate-800 text-white shadow-xl "><CiUser className="w-4 h-4 text-amber-400"/> SingUp</div>
 
