@@ -6,6 +6,8 @@ import DealSection from '../BestDeals/DealSection';
 import PopularSection from '../PopularItem/PopularSection';
 import CategorySection from '../../Category/CategorySection';
 import Banner1 from '../Banner/Banner1';
+import About from '../About/About';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
     return (
@@ -17,6 +19,8 @@ const Home = () => {
             <PopularSection/>
             <CategorySection/>
             <Banner1/>
+            <About/>
+            <Testimonial/>
         </div>
     );
 };
