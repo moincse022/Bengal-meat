@@ -8,6 +8,7 @@ import CategorySection from '../../Category/CategorySection';
 import Banner1 from '../Banner/Banner1';
 import About from '../About/About';
 import Testimonial from '../Testimonial/Testimonial';
+import Subscribe from '../Subscribe/Subscribe';
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <Banner1/>
             <About/>
             <Testimonial/>
+            <Subscribe/>
         </div>
     );
 };

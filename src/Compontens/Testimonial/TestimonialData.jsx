@@ -20,7 +20,7 @@ const Data = [
   {
     id: 3,
     name: "AninditaTrisha",
-    image:"Works in a multinational",
+    title:"Works in a multinational",
     image: img3,
     desc: "I have been using Bengal Meat for a long time. I have never had any problem with their chicken. It is always fresh and of good",
      
