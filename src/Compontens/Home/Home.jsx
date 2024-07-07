@@ -10,6 +10,7 @@ import About from '../About/About';
 import Testimonial from '../Testimonial/Testimonial';
 import Subscribe from '../Subscribe/Subscribe';
 
+
 const Home = () => {
     return (
         <div>
@@ -23,6 +24,7 @@ const Home = () => {
             <About/>
             <Testimonial/>
             <Subscribe/>
+        
         </div>
     );
 };
