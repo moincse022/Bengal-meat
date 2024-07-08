@@ -61,7 +61,7 @@ const Register = () => {
             </div>
 
             <div className="flex items-center gap-4">
-                <input type="checkbox" className="checkbox border-2 border-black" onClick={()=> setShow(!show)} />
+                <input type="checkbox" className="" onClick={()=> setShow(!show)} />
                  <label className="label">
                      <span className="label-text">I agree to the terms and conditions</span>
                  </label>

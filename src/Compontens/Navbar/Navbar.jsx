@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="flex justify-around items-center bg-slate-800 text-white p-4 h-[120px] -z-10">
+        <div className="flex justify-around items-center bg-[#25262b] text-white p-4 h-[120px] -z-10">
           {/* logo */}
           <div className="mt-4">
             <img src={logo} alt="" className="w-[200px] h-[130px] " />
@@ -21,7 +21,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search"
-              className=" border-2 border-slate-800 rounded-full p-2 w-[300px] h-[50px]"
+              className=" border-2 border-slate-800 rounded-xl p-2 w-[300px] h-[50px]"
             />
             <div className="absolute top-[15px] right-[10px]">
               <IoIosSearch className="text-black w-6 h-6" />
@@ -30,18 +30,18 @@ const Navbar = () => {
           {/* navLink */}
           <div className="flex items-center gap-4">
             <div
-              className="border flex items-center p-2 gap-4 bg-slate-800 text-white shadow-xl"
+              className="border flex items-center cursor-pointer p-2 gap-4 bg-[#25262b] text-white shadow-xl"
               onClick={() => setMenu(menu)}
             >
-              <IoLocationOutline className="w-4 h-4 text-amber-400" /> khulna
+              <IoLocationOutline className="w-4 h-4 text-amber-600" /> khulna
             </div>
-            <div className="bg-slate-800 text-white shadow-xl border p-3 ">
+            <div className="bg-[#25262b] text-white cursor-pointer shadow-2xl border p-3 hover:bg-slate-400 ">
               {" "}
-              <BsFillCartDashFill className="w-4 h-4 text-amber-400" />{" "}
+              <BsFillCartDashFill className="w-4 h-4 text-amber-400" />
             </div>
             <Link to='/login'>
               {" "}
-              <div className="border flex items-center p-2 gap-4 bg-slate-800 text-white shadow-xl ">
+              <div className="border flex items-center p-2 gap-4 cursor-pointer bg-[#25262b] text-white shadow-2xl ">
                 <CiUser className="w-4 h-4 text-amber-400" /> SingUp
               </div>
             </Link>
