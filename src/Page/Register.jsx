@@ -8,7 +8,7 @@ import { FaEyeSlash } from "react-icons/fa";
 const Register = () => {
   const [show, setShow] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const [confirm,setConfirm] = useState(false);
+  const [confirm, setConfirm] = useState(false);
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     name: "",
@@ -66,7 +66,9 @@ const Register = () => {
   return (
     <div className="hero bg-base-200 min-h-screen mt-8 py-4">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl border">
-        <h2 className="text-2xl font-bold text-center py-4">Welcome to Bengal Meat</h2>
+        <h2 className="text-2xl font-bold text-center py-4">
+          Welcome to Bengal Meat
+        </h2>
         <h2 className="text-md text-center">Register Your Account</h2>
         <form className="card-body" onSubmit={handleSubmit}>
           <div className="form-control">
@@ -80,9 +82,8 @@ const Register = () => {
               name="name"
               placeholder="name"
               className="input input-bordered"
-           
             />
-            {errors.name && <p className='text-red-500'>{errors.name}</p>}
+            {errors.name && <p className="text-red-500">{errors.name}</p>}
           </div>
 
           <div className="form-control">
@@ -96,9 +97,8 @@ const Register = () => {
               name="email"
               placeholder="email"
               className="input input-bordered"
-            
             />
-            {errors.email && <p className='text-red-500'>{errors.email}</p>}
+            {errors.email && <p className="text-red-500">{errors.email}</p>}
           </div>
 
           <div className="form-control">
@@ -112,9 +112,8 @@ const Register = () => {
               name="phone"
               placeholder="phone"
               className="input input-bordered"
-         
             />
-            {errors.phone && <p className='text-red-500'>{errors.phone}</p>}
+            {errors.phone && <p className="text-red-500">{errors.phone}</p>}
           </div>
 
           <div className="form-control">
@@ -126,14 +125,15 @@ const Register = () => {
               onChange={handleChange}
               value={formData.gender}
               name="gender"
-             
             >
-              <option value="" disabled selected>Select gender</option>
+              <option value="" disabled selected>
+                Select gender
+              </option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
               <option value="Other">Other</option>
             </select>
-            {errors.gender && <p className='text-red-500'>{errors.gender}</p>}
+            {errors.gender && <p className="text-red-500">{errors.gender}</p>}
           </div>
 
           <div className="form-control relative">
@@ -147,7 +147,6 @@ const Register = () => {
               name="password"
               placeholder="password"
               className="input input-bordered"
-             
             />
             {showPassword ? (
               <BiShow
@@ -160,7 +159,9 @@ const Register = () => {
                 onClick={() => setShowPassword(!showPassword)}
               />
             )}
-            {errors.password && <p className='text-red-500'>{errors.password}</p>}
+            {errors.password && (
+              <p className="text-red-500">{errors.password}</p>
+            )}
           </div>
 
           <div className="form-control">
@@ -174,9 +175,8 @@ const Register = () => {
               name="confirmPassword"
               placeholder="confirm password"
               className="input input-bordered"
-           
             />
-                {confirm ? (
+            {confirm ? (
               <BiShow
                 className="absolute top-[70%] right-12 cursor-pointer"
                 onClick={() => setConfirm(!confirm)}
@@ -187,7 +187,9 @@ const Register = () => {
                 onClick={() => setConfirm(!confirm)}
               />
             )}
-            {errors.confirmPassword && <p className='text-red-500'>{errors.confirmPassword}</p>}
+            {errors.confirmPassword && (
+              <p className="text-red-500">{errors.confirmPassword}</p>
+            )}
           </div>
 
           <div className="flex items-center gap-4">
@@ -197,7 +199,9 @@ const Register = () => {
               onClick={() => setShow(!show)}
             />
             <label className="label">
-              <span className="label-text">I agree to the terms and conditions</span>
+              <span className="label-text">
+                I agree to the terms and conditions
+              </span>
             </label>
           </div>
           <div className="form-control mt-6">
@@ -211,11 +215,19 @@ const Register = () => {
           </div>
           <div className="flex items-center gap-8 justify-center">
             <div className="">
-              <img src={facebook} alt="Facebook" className="mx-auto cursor-pointer" />
+              <img
+                src={facebook}
+                alt="Facebook"
+                className="mx-auto cursor-pointer"
+              />
               <p>Facebook</p>
             </div>
             <div className="">
-              <img src={google} alt="Google" className="mx-auto cursor-pointer" />
+              <img
+                src={google}
+                alt="Google"
+                className="mx-auto cursor-pointer"
+              />
               <p>Google</p>
             </div>
           </div>

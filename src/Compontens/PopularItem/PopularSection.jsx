@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import data from "../BestDeals/DealData";
-import popularLogo from '../../assets/DealSeller/crown.png'
+
+import popularLogo from "../../assets/DealSeller/crown.png";
 import PopularItemCard from "./PopularItemCard";
-const PopularSection = () => {
+const PopularSection = ({ data }) => {
+  console.log(data);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -53,9 +55,7 @@ const PopularSection = () => {
       <div className="slider-container p-4 ">
         <Slider {...settings} className="w-3/4 mx-auto ">
           {data?.map((item) => (
-            <div className="">
-              <PopularItemCard item={item} />
-            </div>
+            <PopularItemCard key={item.id} item={item}></PopularItemCard>
           ))}
         </Slider>
       </div>

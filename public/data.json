@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "name": "Beef-Bowels",
+        "img": "https://i.ibb.co/0GS0gqr/Beef-Bowels.jpg",
+        "price": 123,
+        "amount": 200,
+        "rating":4.5
+    },
+    
+    {
+        "id": 2,
+        "name": "Beef-Brisket-Bone-In",
+        "img": "https://i.ibb.co/NKvLDNp/Beef-Brisket-Bone-In.jpg",
+        "price": 654,
+        "amount": 300,
+        "rating":4.5
+        
+    },
+
+    {
+        "id": 3,
+        "name": "Chicken-Cheese-Cocktail-Sausage",
+        "img": "https://i.ibb.co/Tq0TS5S/Chicken-Cheese-Cocktail-Sausage.jpg",
+        "price": 550,
+        "amount": 89,
+        "rating":4.5
+    },
+    {
+        "id": 4,
+        "name": "corinder-powher",
+        "img": "https://i.ibb.co/rf5hwgJ/corinder-powher.jpg",
+        "price": 440,
+        "amount": 321,
+        "rating":4.5
+    }
+    ,
+    {
+        "id": 5,
+        "name": "Mutton-bone",
+        "img": "https://i.ibb.co/ScLrNVs/Mutton-bone.jpg",
+        "price": 120,
+        "amount": 123,
+        "rating":4.5
+    }
+    ,
+    {
+        "id": 6,
+        "name": "Turmeric-Powder",
+        "img": "https://i.ibb.co/sRqHw3j/Turmeric-Powder.jpg",
+        "price": 210,
+        "amount": 456,
+        "rating":4.5
+    }
+    ,
+    {
+        "id": 7,
+        "name": "whole-chiken",
+        "img": "https://i.ibb.co/2ZLPMx4/whole-chiken.jpg",
+        "price": 420,
+        "amount": 780,
+        "rating":4.5
+    }
+ 
+
+]
+    

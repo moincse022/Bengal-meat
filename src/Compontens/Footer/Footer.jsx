@@ -3,11 +3,11 @@ import logo from "../../assets/Image/logo.png";
 import icon from "../../assets/Image/footer_icons_logo.png";
 import apple from "../../assets/Image/app_store_btn.png";
 import google from "../../assets/Image/google_play_brn.png";
-import visa from '../../assets/Payment/visa_icon.png'
-import mastercard from '../../assets/Payment/mastercard_icon.png'
-import bkash from '../../assets/Payment/bkash_icon.png'
-import nogod from '../../assets/Payment/nogod_icon.png' 
-import nexsus from '../../assets/Payment/nexsus_pay_logo.png'
+import visa from "../../assets/Payment/visa_icon.png";
+import mastercard from "../../assets/Payment/mastercard_icon.png";
+import bkash from "../../assets/Payment/bkash_icon.png";
+import nogod from "../../assets/Payment/nogod_icon.png";
+import nexsus from "../../assets/Payment/nexsus_pay_logo.png";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa6";
 import { CiYoutube } from "react-icons/ci";
@@ -19,7 +19,7 @@ const Footer = () => {
     //         <div className="lg:w-1/3 mx-4 text-white">
     //          <img src={logo} alt="" className="w-26 h-20" />
     //          <h2 className="text-md font-semibold tracking-wide">Bengal Meat Processing Industries Ltd.</h2>
-    //          <p className="text-sm">Bengal Meat Processing Industry is an export oriented world class meat industry. We produce safe wholesome meat and meat products that are of the highest quality and standard for domestic and international markets</p>
+    //          <p className="text-sm">Bengal Meat Processing Industry is an export oriented world className meat industry. We produce safe wholesome meat and meat products that are of the highest quality and standard for domestic and international markets</p>
     //          <img src={icon} alt="" className="py-4" />
     //         </div>
     //         <div className="grid grid-cols-2 text-sm text-white gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
@@ -114,10 +114,10 @@ const Footer = () => {
               Bengal Meat Processing Industries Ltd.
             </h2>
             <p className="text-sm">
-              Bengal Meat Processing Industry is an export oriented world class
-              meat industry. We produce safe wholesome meat and meat products
-              that are of the highest quality and standard for domestic and
-              international markets
+              Bengal Meat Processing Industry is an export oriented world
+              className meat industry. We produce safe wholesome meat and meat
+              products that are of the highest quality and standard for domestic
+              and international markets
             </p>
             <img src={icon} alt="" className="py-4" />
           </div>
@@ -129,7 +129,7 @@ const Footer = () => {
               <ul className="">
                 <li>
                   <a rel="noopener noreferrer" href="#">
-                  Information
+                    Information
                   </a>
                 </li>
                 <li>
@@ -143,21 +143,22 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                
                   <a rel="noopener noreferrer" href="#">
-                  License & Certifications
+                    License & Certifications
                   </a>
                 </li>
               </ul>
             </div>
             <div className="space-y-3">
-              <h3 className="tracki uppercase dark:text-gray-50"> Customer Service </h3>
-          
-            
+              <h3 className="tracki uppercase dark:text-gray-50">
+                {" "}
+                Customer Service{" "}
+              </h3>
+
               <ul className="">
                 <li>
                   <a rel="noopener noreferrer" href="#">
-                   Customer feedback
+                    Customer feedback
                   </a>
                 </li>
                 <li>
@@ -167,18 +168,15 @@ const Footer = () => {
                 </li>
                 <li>
                   <a rel="noopener noreferrer" href="#">
-                   How to order
+                    How to order
                   </a>
                 </li>
-                <li>
-                
-                </li>
+                <li></li>
               </ul>
             </div>
             <div className="space-y-1">
-              <h3 className="tracki uppercase dark:text-gray-50">Resources  </h3>
-          
-            
+              <h3 className="tracki uppercase dark:text-gray-50">Resources </h3>
+
               <ul className="">
                 <li>
                   <a rel="noopener noreferrer" href="#">
@@ -187,16 +185,15 @@ const Footer = () => {
                 </li>
                 <li>
                   <a rel="noopener noreferrer" href="#">
-                   Walk the meat
+                    Walk the meat
                   </a>
                 </li>
                 <li>
                   <a rel="noopener noreferrer" href="#">
-               Export speaks
+                    Export speaks
                   </a>
                 </li>
                 <li>
-                
                   <a rel="noopener noreferrer" href="#">
                     Blog
                   </a>
@@ -205,8 +202,7 @@ const Footer = () => {
             </div>
             <div className="space-y-3">
               <h3 className="tracki uppercase dark:text-gray-50">Policies </h3>
-          
-            
+
               <ul className="space-y-1">
                 <li>
                   <a rel="noopener noreferrer" href="#">
@@ -224,7 +220,6 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                
                   <a rel="noopener noreferrer" href="#">
                     FAQ
                   </a>
@@ -235,35 +230,34 @@ const Footer = () => {
         </div>
 
         <div className="py-4  text-white flex justify-center items-center gap-8">
-           <div className=" ml-16 ">
-                <h2 className="text-white text-center">Download App</h2>
-                <div className="flex items-center gap-4">
-                 <img src={apple} alt="" className="" />
-                 <img src={google} alt="" className="" />
-                </div>
-           </div>
-           <div className="">
+          <div className=" ml-16 ">
+            <h2 className="text-white text-center">Download App</h2>
+            <div className="flex items-center gap-4">
+              <img src={apple} alt="" className="" />
+              <img src={google} alt="" className="" />
+            </div>
+          </div>
+          <div className="">
             <h2 className="text-center">online Payment</h2>
             <div className="flex items-center gap-4">
-                <img src={visa} alt="" className="" />
-                <img src={mastercard} alt="" className="" />
-                <img src={bkash} alt="" className="" />
-                <img src={nogod} alt="" className="" />
-                <img src={nexsus} alt="" className="w-12 h-8" />
+              <img src={visa} alt="" className="" />
+              <img src={mastercard} alt="" className="" />
+              <img src={bkash} alt="" className="" />
+              <img src={nogod} alt="" className="" />
+              <img src={nexsus} alt="" className="w-12 h-8" />
             </div>
+          </div>
 
-           </div>
-
-            <div className="">
-                <h2 className="text-center">Follow Us</h2>
+          <div className="">
+            <h2 className="text-center">Follow Us</h2>
             <div className="flex items-center gap-4">
-            <AiOutlineFacebook className="w-6 h-6 hover:bg-amber-400"/>
-            <FaLinkedin className="w-6 h-6 hover:bg-amber-400"/>
-            <FaInstagram className="w-6 h-6 hover:bg-amber-400"/>
-            <CiYoutube className="w-6 h-6 hover:bg-amber-400"/>
-            <aLinkedin className="w-6 h-6 hover:bg-amber-400"/>
-           </div>
+              <AiOutlineFacebook className="w-6 h-6 hover:bg-amber-400" />
+              <FaLinkedin className="w-6 h-6 hover:bg-amber-400" />
+              <FaInstagram className="w-6 h-6 hover:bg-amber-400" />
+              <CiYoutube className="w-6 h-6 hover:bg-amber-400" />
+              <aLinkedin className="w-6 h-6 hover:bg-amber-400" />
             </div>
+          </div>
         </div>
       </div>
     </div>

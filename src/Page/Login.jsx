@@ -1,17 +1,17 @@
-import { Link } from 'react-router-dom';
-import facebook from '../assets/Payment/facebook_icon.svg';
-import google from '../assets/Payment/google_icon.svg';
-import otp from '../assets/Payment/otp_icon.svg';
+import { Link } from "react-router-dom";
+import facebook from "../assets/Payment/facebook_icon.svg";
+import google from "../assets/Payment/google_icon.svg";
+import otp from "../assets/Payment/otp_icon.svg";
 import { BiShow } from "react-icons/bi";
 import { FaEyeSlash } from "react-icons/fa";
-import { useState } from 'react';
+import { useState } from "react";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState({});
   const [formData, setFormData] = useState({
-    email: '',
-    password: '',
+    email: "",
+    password: "",
   });
 
   const handleChange = (e) => {
@@ -26,24 +26,25 @@ const Login = () => {
     e.preventDefault();
     const validationErrors = {};
     if (!formData.email.trim()) {
-      validationErrors.email = 'Email is required';
+      validationErrors.email = "Email is required";
     }
     if (!formData.password.trim()) {
-      validationErrors.password = 'Password is required';
+      validationErrors.password = "Password is required";
     }
     setError(validationErrors);
     if (Object.keys(validationErrors).length === 0) {
-      alert('Form submitted successfully!');
+      alert("Form submitted successfully!");
       console.log(formData);
       // proceed with form submission (e.g., API call)
     }
-    
   };
 
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl border">
-        <h2 className="text-2xl font-bold text-center py-2">Welcome to Bengal Meat</h2>
+        <h2 className="text-2xl font-bold text-center py-2">
+          Welcome to Bengal Meat
+        </h2>
         <h2 className="text-md text-center">Login with your credentials</h2>
         <form className="card-body" onSubmit={handleSubmit}>
           <div className="form-control">
@@ -57,9 +58,8 @@ const Login = () => {
               onChange={handleChange}
               placeholder="email"
               className="input input-bordered"
-      
             />
-            {error?.email && <p className='text-red-500'>{error.email}</p>}
+            {error?.email && <p className="text-red-500">{error.email}</p>}
           </div>
           <div className="form-control">
             <label className="label">
@@ -73,15 +73,33 @@ const Login = () => {
               placeholder="password"
               className="input input-bordered relative"
             />
-            {showPassword
-              ? <BiShow className='absolute top-1/2 right-12 cursor-pointer' onClick={() => setShowPassword(!showPassword)} />
-              : <FaEyeSlash className='absolute top-1/2 right-12 cursor-pointer' onClick={() => setShowPassword(!showPassword)} />
-            }
-            {error?.password && <p className='text-red-500'>{error.password}</p>}
+            {showPassword ? (
+              <BiShow
+                className="absolute top-1/2 right-12 cursor-pointer"
+                onClick={() => setShowPassword(!showPassword)}
+              />
+            ) : (
+              <FaEyeSlash
+                className="absolute top-1/2 right-12 cursor-pointer"
+                onClick={() => setShowPassword(!showPassword)}
+              />
+            )}
+            {error?.password && (
+              <p className="text-red-500">{error.password}</p>
+            )}
           </div>
           <div className="flex items-center justify-between">
-            <h2 className="text-sm">New User? <Link to='/register'><span className='text-[#124693] hover:text-[#ffc107] cursor-pointer'>Register Here</span></Link></h2>
-            <h2 className="text-sm text-[#124693] hover:text-[#ffc107] cursor-pointer">Forgot Password?</h2>
+            <h2 className="text-sm">
+              New User?{" "}
+              <Link to="/register">
+                <span className="text-[#124693] hover:text-[#ffc107] cursor-pointer">
+                  Register Here
+                </span>
+              </Link>
+            </h2>
+            <h2 className="text-sm text-[#124693] hover:text-[#ffc107] cursor-pointer">
+              Forgot Password?
+            </h2>
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-warning">Login</button>
@@ -93,11 +111,19 @@ const Login = () => {
               <p>OTP</p>
             </div>
             <div>
-              <img src={facebook} alt="Facebook" className="mx-auto cursor-pointer" />
+              <img
+                src={facebook}
+                alt="Facebook"
+                className="mx-auto cursor-pointer"
+              />
               <p>Facebook</p>
             </div>
             <div>
-              <img src={google} alt="Google" className="mx-auto cursor-pointer" />
+              <img
+                src={google}
+                alt="Google"
+                className="mx-auto cursor-pointer"
+              />
               <p>Google</p>
             </div>
           </div>

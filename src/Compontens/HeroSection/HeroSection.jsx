@@ -30,12 +30,12 @@
 
 // export default HeroSection;
 
-import React from 'react';
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "../HeroSection/HeroData";
-import Card from './Card';
+import Card from "./Card";
 
 const settings = {
   dots: true,
@@ -50,7 +50,7 @@ const settings = {
   pauseOnHover: true,
   pauseOnFocus: true,
   pauseOnDotsHover: true,
-  
+
   responsive: [
     {
       breakpoint: 1024,
@@ -58,31 +58,31 @@ const settings = {
         slidesToShow: 5,
         slidesToScroll: 5,
         infinite: true,
-        dots: true
-      }
+        dots: true,
+      },
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        initialSlide: 3
-      }
+        initialSlide: 3,
+      },
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 const HeroSection = () => {
   return (
     <div className="slider-container -mt-16">
-      <Slider {...settings}  className='w-3/4 mx-auto '>
+      <Slider {...settings} className="w-3/4 mx-auto ">
         {data.map((item) => (
           <div className="">
             <Card item={item} />

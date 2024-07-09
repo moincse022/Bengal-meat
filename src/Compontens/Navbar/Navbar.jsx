@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="flex justify-around items-center bg-[#25262b] text-white p-4 h-[120px] -z-10">
           {/* logo */}
           <div className="mt-4">
-            <img src={logo} alt="" className="w-[200px] h-[130px] " />
+           <Link to='/'> <img src={logo} alt="" className="w-[200px] h-[130px] " /></Link>
           </div>
           {/* input file */}
           <div className="relative">
@@ -39,7 +39,7 @@ const Navbar = () => {
               {" "}
               <BsFillCartDashFill className="w-4 h-4 text-amber-400" />
             </div>
-            <Link to='/login'>
+            <Link to="/login">
               {" "}
               <div className="border flex items-center p-2 gap-4 cursor-pointer bg-[#25262b] text-white shadow-2xl ">
                 <CiUser className="w-4 h-4 text-amber-400" /> SingUp
