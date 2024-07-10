@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import facebook from "../assets/Payment/facebook_icon.svg";
-import google from "../assets/Payment/google_icon.svg";
+// import google from "../assets/Payment/google_icon.svg";
 import otp from "../assets/Payment/otp_icon.svg";
 import { BiShow } from "react-icons/bi";
 import { FaEyeSlash } from "react-icons/fa";
 import { useState } from "react";
+import GoogleLogin from "../SocialLogin/GoogleLogin";
+// import useAuth from "../Hook/useAuth";
+// import GoogleLogin from "../SocialLogin/GoogleLogin";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -14,6 +17,8 @@ const Login = () => {
     password: "",
   });
 
+  // const {user}=useAuth();
+  // console.log(user)
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -118,14 +123,15 @@ const Login = () => {
               />
               <p>Facebook</p>
             </div>
-            <div>
+            {/* <div>
               <img
                 src={google}
                 alt="Google"
                 className="mx-auto cursor-pointer"
               />
               <p>Google</p>
-            </div>
+            </div> */}
+            <GoogleLogin/>
           </div>
         </form>
       </div>
