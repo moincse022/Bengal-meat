@@ -7,6 +7,7 @@ import SellerData from "../BestSeller/SellerData";
 import SellerCard from "./SellerCard";
 import sellerLogo from "../../assets/ImageSeller/sale-tag-icon.png";
 const BestSeller = () => {
+  
   const settings = {
     dots: true,
     infinite: true,

@@ -6,21 +6,25 @@ import Login from "../Page/Login";
 import Register from "../Page/Register";
 
 import ProductDetails from "../Category/Product/ProductDetails";
+import ErrorPage from "../ErrorPage/ErrorPage";
+// import ShowData from "../Page/ShowData/ShowData";
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
         element: <Home />,
       },
-    
+
       {
         path: "/product/:id",
-        element: <ProductDetails/>,
-        loader:()=> fetch('./data.json')
-  
+        loader: () => fetch("./data.json"),
+        element: <ProductDetails />,
+      
       },
       {
         path: "/login",
@@ -28,8 +32,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/register",
-        element:<Register/>,
+        element: <Register />,
       },
+
+
     ],
   },
 ]);

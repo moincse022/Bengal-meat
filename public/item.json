@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Mutton-Keema",
+        "image": "https://i.postimg.cc/FFxq2N6r/Mutton-Keema.jpg",
+        "price": 29.99,
+        "amount": 100,
+        "rating": 4.5
+    },
+    {
+        "id": 2,
+        "name": "mutton-Shank",
+        "image": "https://i.postimg.cc/HnQ7P6zn/mutton-Shank.jpg",
+        "price": 19.99,
+        "amount": 200,
+        "rating": 4.0
+    },
+    {
+        "id": 3,
+        "name": "Mutton-back-leg",
+        "image": "https://i.postimg.cc/QxJTQnVn/Mutton-back-leg.jpg",
+        "price": 49.99,
+        "amount": 150,
+        "rating": 4.8
+    },
+    {
+        "id": 4,
+        "name": "Beef-Tenderloin-steak",
+        "image": "https://i.postimg.cc/L8yg7Ytt/Beef-Tenderloin-steak.png",
+        "price": 9.99,
+        "amount": 500,
+        "rating": 3.9
+    },
+    {
+        "id": 5,
+        "name": "Beef-Sirloin-steak",
+        "image": "https://i.postimg.cc/7PgG4Q1Y/Beef-Sirloin-steak.jpg",
+        "price": 24.99,
+        "amount": 300,
+        "rating": 4.2
+    },
+    {
+        "id": 6,
+        "name": "sausage",
+        "image": "https://i.postimg.cc/XJ9JVpCD/sausage.jpg",
+        "price": 14.99,
+        "amount": 250,
+        "rating": 4.1
+    },
+    {
+        "id": 7,
+        "name": "Chicken-sausage",
+        "image": "https://i.postimg.cc/x8YdqnGj/Chicken-sausage.jpg",
+        "price": 39.99,
+        "amount": 120,
+        "rating": 4.7
+    },
+    {
+        "id": 8,
+        "name": "gulsha-Fish",
+        "image": "https://i.postimg.cc/Ls14TnN6/gulsha-Fish.jpg",
+        "price": 59.99,
+        "amount": 80,
+        "rating": 4.9
+    },
+    {
+        "id": 9,
+        "name": "Bata-Fish",
+        "image": "https://i.postimg.cc/9Q4cmD3t/Bata-Fish.jpg",
+        "price": 79.99,
+        "amount": 60,
+        "rating": 4.6
+    },
+    {
+        "id": 10,
+        "name": "pabda-fish",
+        "image": "https://i.postimg.cc/y8R2pc45/pabda-fish.jpg",
+        "price": 5.99,
+        "amount": 1000,
+        "rating": 3.8
+    },
+    {
+        "id": 11,
+        "name": "chicken-Rasher",
+        "image": "https://i.postimg.cc/BZDY0swL/chicken-Rasher.jpg",
+        "price": 99.99,
+        "amount": 40,
+        "rating": 4.3
+    },
+    {
+        "id": 12,
+        "name": "chicken-pepperoni",
+        "image": "https://i.postimg.cc/PqpbQzgp/chicken-pepperoni.jpg",
+        "price": 89.99,
+        "amount": 70,
+        "rating": 4.4
+    }
+]

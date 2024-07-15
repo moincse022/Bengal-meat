@@ -60,7 +60,81 @@
         "price": 420,
         "amount": 780,
         "rating":4.5
-    }
+    },
+    {
+            "id": 8,
+        "name": "whole-chiken",
+        "img": "https://i.ibb.co/2ZLPMx4/whole-chiken.jpg",
+        "price": 420,
+        "amount": 780,
+        "rating":4.5
+    },
+    
+    { 
+        "id": 9,
+        "name": "whole-chiken",
+        "img": "https://i.ibb.co/2ZLPMx4/whole-chiken.jpg",
+        "price": 420,
+        "amount": 780,
+        "rating":4.5
+    },
+    {
+            "id": 10,
+        "name": "whole-chiken",
+        "img": "https://i.ibb.co/2ZLPMx4/whole-chiken.jpg",
+        "price": 420,
+        "amount": 780,
+        "rating":4.5
+    },
+    {
+           "id": 11,
+        "name": "whole-chiken",
+        "img": "https://i.ibb.co/2ZLPMx4/whole-chiken.jpg",
+        "price": 420,
+        "amount": 780,
+        "rating":4.5
+    },
+    {
+           "id": 12,
+        "name": "whole-chiken",
+        "img": "https://i.ibb.co/2ZLPMx4/whole-chiken.jpg",
+        "price": 420,
+        "amount": 780,
+        "rating":4.5
+    },
+    {
+            "id": 13,
+        "name": "whole-chiken",
+        "img": "https://i.ibb.co/2ZLPMx4/whole-chiken.jpg",
+        "price": 420,
+        "amount": 780,
+        "rating":4.5
+    },
+        {
+               "id": 14,
+        "name": "whole-chiken",
+        "img": "https://i.ibb.co/2ZLPMx4/whole-chiken.jpg",
+        "price": 420,
+        "amount": 780,
+        "rating":4.5
+        },
+        {
+               "id": 15,
+        "name": "whole-chiken",
+        "img": "https://i.ibb.co/2ZLPMx4/whole-chiken.jpg",
+        "price": 420,
+        "amount": 780,
+        "rating":4.5
+        },
+        {
+                "id": 16,
+        "name": "whole-chiken",
+        "img": "https://i.ibb.co/2ZLPMx4/whole-chiken.jpg",
+        "price": 420,
+        "amount": 780,
+        "rating":4.5
+        }
+    
  
 
 ]

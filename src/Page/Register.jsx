@@ -1,15 +1,23 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import facebook from "../assets/Payment/facebook_icon.svg";
 import google from "../assets/Payment/google_icon.svg";
 import { BiShow } from "react-icons/bi";
 import { FaEyeSlash } from "react-icons/fa";
+
+import useAuth from "../Hook/useAuth";
+import toast from "react-hot-toast";
+import GoogleLogin from "../SocialLogin/GoogleLogin";
 
 const Register = () => {
   const [show, setShow] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [confirm, setConfirm] = useState(false);
   const [errors, setErrors] = useState({});
+  const{  createUser}=useAuth();
+
+  const navigate=useNavigate();
+  // console.log(signIn);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -58,9 +66,32 @@ const Register = () => {
 
     if (Object.keys(validationErrors).length === 0) {
       alert("Form submitted successfully!");
-      console.log(formData);
+      // console.log(formData.name,formData.email,formData.password);
+        // signIn(formData.email,formData.password);
+        
+
       // proceed with form submission (e.g., API call)
     }
+    // console.log(formData.name,formData.email,formData.password);
+      // creating a new user
+      createUser(formData.email, formData.password)
+      // .then(()=>{
+      
+          .then(() => {
+              toast.success('User created successfully');
+              navigate('/login')
+
+          })
+          .catch((error) => {
+              toast.error(error.message);
+          })
+          
+      // })
+      // .catch((error)=>{
+      //     console.log(error);
+      // })
+    
+ 
   };
 
   return (
@@ -222,14 +253,15 @@ const Register = () => {
               />
               <p>Facebook</p>
             </div>
-            <div className="">
+            {/* <div className="">
               <img
                 src={google}
                 alt="Google"
                 className="mx-auto cursor-pointer"
               />
               <p>Google</p>
-            </div>
+            </div> */}
+            <GoogleLogin/>
           </div>
         </form>
       </div>

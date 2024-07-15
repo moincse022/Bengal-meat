@@ -13,6 +13,7 @@ import Subscribe from '../Subscribe/Subscribe';
 
 const Home = () => {
     const [data,setData]=useState([]);
+    const [dataFromChild, setDataFromChild] = useState('');
     const [isLoading,setIsLoading]=useState(true);
     useEffect(()=>{
         fetch('data.json')
@@ -25,14 +26,21 @@ const Home = () => {
 
         
     },[])
- console.log(data)
+//  console.log(data)
  if(isLoading){
     return <h1>Loading...</h1>
  }
+
+
+
+ const handleDataFromChild = (data) => {
+   setDataFromChild(data);
+ };
+console.log(dataFromChild)
     return (
         <div>
             <Banner/>
-            <HeroSection/>
+            <HeroSection onData={handleDataFromChild}/>
             <BestSeller/>
             <DealSection data={data}/>
             <PopularSection data={data}/>

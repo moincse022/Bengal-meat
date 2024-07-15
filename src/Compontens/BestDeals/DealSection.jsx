@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import DealLogo from "../../assets/DealSeller/bestDeals_icon.png";
 import DealCard from "./DealCard";
 const DealSection = ({ data }) => {
-  // console.log(data)
+  console.log(data)
   const settings = {
     dots: true,
     infinite: true,

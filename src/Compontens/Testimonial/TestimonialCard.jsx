@@ -1,7 +1,7 @@
 import React from "react";
 
 const TestimonialCard = ({ item }) => {
-  console.log(item);
+  // console.log(item);
   return (
     <div className="mx-2 shadow-2xl  p-4">
       <div className="flex justify-start items-center gap-2 ">

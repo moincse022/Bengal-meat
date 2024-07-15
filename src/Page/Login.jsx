@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import facebook from "../assets/Payment/facebook_icon.svg";
 // import google from "../assets/Payment/google_icon.svg";
 import otp from "../assets/Payment/otp_icon.svg";
@@ -6,17 +6,21 @@ import { BiShow } from "react-icons/bi";
 import { FaEyeSlash } from "react-icons/fa";
 import { useState } from "react";
 import GoogleLogin from "../SocialLogin/GoogleLogin";
+import useAuth from "../Hook/useAuth";
+import toast from "react-hot-toast";
 // import useAuth from "../Hook/useAuth";
 // import GoogleLogin from "../SocialLogin/GoogleLogin";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState({});
+  const {signIn}=useAuth();
+  const navigate=useNavigate();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
+ 
   // const {user}=useAuth();
   // console.log(user)
   const handleChange = (e) => {
@@ -42,6 +46,15 @@ const Login = () => {
       console.log(formData);
       // proceed with form submission (e.g., API call)
     }
+ // creating a new user
+ signIn (formData.email,  formData.password)
+ .then(() => {
+     toast.success('User logged in successfully');
+     navigate('/')
+ })
+ .catch(error => {
+     toast.error(error.message)
+ })
   };
 
   return (
