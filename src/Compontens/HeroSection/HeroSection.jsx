@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import data from "../HeroSection/HeroData";
 import Card from "./Card";
-import { Link } from "react-router-dom";
 // import ShowData from "../../Page/ShowData/ShowData";
 
 const settings = {
@@ -14,13 +13,11 @@ const settings = {
   slidesToShow: 5,
   slidesToScroll: 5,
   initialSlide: 0,
-  loop: true,
   autoplay: true,
   autoplaySpeed: 3000,
   pauseOnHover: true,
   pauseOnFocus: true,
   pauseOnDotsHover: true,
-
   responsive: [
     {
       breakpoint: 1024,
@@ -49,25 +46,31 @@ const settings = {
   ],
 };
 
-const HeroSection = ({ onData }) => {
-  const handleClick = (menu) => {
-    onData(menu);
-    console.log(menu);
-  };
+const HeroSection = () => {
+  const [selectedName, setSelectedName] = useState('');
+
+
+  const handleClick = (name) => {
+    setSelectedName(name);
+    localStorage.setItem('selectedName', name);
+    
+  }
+console.log(selectedName);
   return (
     <div className="slider-container -mt-16">
-      <Slider {...settings} className="w-3/4 mx-auto ">
+      <Slider {...settings} className="w-3/4 mx-auto">
         {data?.map((item) => (
           <div
             key={item.id}
-            className=""
             onClick={() => handleClick(item.name)}
           >
-            <Card item={item} menuId={item.id} />
-            {/* <ShowData menuId={menu} /> */}
+            <Card item={item} />
           </div>
         ))}
       </Slider>
+      {/* {selectedName && (
+        <ShowData name={selectedName} />
+      )} */}
     </div>
   );
 };

@@ -7,7 +7,8 @@ import Register from "../Page/Register";
 
 import ProductDetails from "../Category/Product/ProductDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
-// import ShowData from "../Page/ShowData/ShowData";
+import ShowData from "../Page/ShowData/ShowData";
+
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,11 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register />,
       },
+      {
+        path:'/show/:name',
+        loader: () => fetch("./item.json"),
+        element: <ShowData />
+      }
 
 
     ],

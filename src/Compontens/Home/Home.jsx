@@ -13,7 +13,7 @@ import Subscribe from '../Subscribe/Subscribe';
 
 const Home = () => {
     const [data,setData]=useState([]);
-    const [dataFromChild, setDataFromChild] = useState('');
+    // const [dataFromChild, setDataFromChild] = useState('');
     const [isLoading,setIsLoading]=useState(true);
     useEffect(()=>{
         fetch('data.json')
@@ -33,14 +33,14 @@ const Home = () => {
 
 
 
- const handleDataFromChild = (data) => {
-   setDataFromChild(data);
- };
-console.log(dataFromChild)
+//  const handleDataFromChild = (data) => {
+//    setDataFromChild(data);
+//  };
+// console.log(dataFromChild)
     return (
         <div>
             <Banner/>
-            <HeroSection onData={handleDataFromChild}/>
+            <HeroSection />
             <BestSeller/>
             <DealSection data={data}/>
             <PopularSection data={data}/>

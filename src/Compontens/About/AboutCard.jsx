@@ -1,7 +1,7 @@
 import React from "react";
 
 const AboutCard = ({ item }) => {
-  console.log(item);
+  // console.log(item);
   return (
     <div className=" mx-2 shadow-xl bg-red-9">
       <img

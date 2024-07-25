@@ -41,7 +41,7 @@ const GoogleLogin = () => {
                 className="mx-auto cursor-pointer"
             />
             <p>Google</p>
-            {loading && <p>Loading...</p>}
+            {/* {loading && <p>Loading...</p>} */}
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import facebook from "../assets/Payment/facebook_icon.svg";
-import google from "../assets/Payment/google_icon.svg";
+// import google from "../assets/Payment/google_icon.svg";
 import { BiShow } from "react-icons/bi";
 import { FaEyeSlash } from "react-icons/fa";
 
